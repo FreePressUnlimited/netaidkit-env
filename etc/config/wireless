@@ -12,6 +12,8 @@ config wifi-iface
 	option network  wwan
 	option mode     sta
 	option disabled 1
+    option ifname   'wlan0'
+    option nak_wlan_tag 1
 
 config wifi-iface
 	option device radio0
@@ -22,3 +24,5 @@ config wifi-iface
 	option network wlan
 	option hidden 0
     option isolate 1
+    option ifname 'wlan1'
+    option nak_ap_tag 1

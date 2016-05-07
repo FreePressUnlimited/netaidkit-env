@@ -10,10 +10,12 @@ config interface 'wlan'
         option proto 'static'
         option ipaddr '192.168.101.1'
         option netmask '255.255.255.0'
+        option nak_lan_tag 1
 
 config interface 'wan'
         option ifname 'eth0'
         option proto 'dhcp'
+        option nak_wan_tag 1
 
 config interface 'wwan'
         option proto 'dhcp'
