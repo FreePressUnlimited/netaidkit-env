@@ -31,10 +31,10 @@ config redirect
         option dest_port        '80'
         option enabled          '1'
         list   nak_rule_enable  'reset'
-        list   nak_rule_disable 'stage_online'
-        list   nak_rule_disable 'stage_vpn'
-        list   nak_rule_disable 'stage_tor'
-        list   nak_rule_disable 'stage_default'
+        list   nak_rule_disable 'online'
+        list   nak_rule_disable 'vpn'
+        list   nak_rule_disable 'tor'
+        list   nak_rule_disable 'default'
 
 # ROUTER MODE
 config forwarding
@@ -42,10 +42,10 @@ config forwarding
         option src              'wlan'
         option dest             'wan'
         option enabled          '0'
-        list   nak_rule_enable 'stage_online'
-        list   nak_rule_disable 'stage_vpn'
-        list   nak_rule_disable 'stage_tor'
-        list   nak_rule_disable 'stage_default'
+        list   nak_rule_enable 'online'
+        list   nak_rule_disable 'vpn'
+        list   nak_rule_disable 'tor'
+        list   nak_rule_disable 'default'
         list   nak_rule_disable 'reset'
 
 # TOR DNS
@@ -56,10 +56,10 @@ config redirect
         option src_dport        '53'
         option dest_port        '9053'
         option enabled          '0'
-        list   nak_rule_enable  'stage_tor'
-        list   nak_rule_disable 'stage_online'
-        list   nak_rule_disable 'stage_vpn'
-        list   nak_rule_disable 'stage_default'
+        list   nak_rule_enable  'tor'
+        list   nak_rule_disable 'online'
+        list   nak_rule_disable 'vpn'
+        list   nak_rule_disable 'default'
         list   nak_rule_disable 'reset'
 
 # TOR PROXY
@@ -70,10 +70,10 @@ config redirect
         option src_dip          !192.168.101.0/24
         option dest_port        '9040'
         option enabled          '0'
-        list   nak_rule_enable  'stage_tor'
-        list   nak_rule_disable 'stage_online'
-        list   nak_rule_disable 'stage_vpn'
-        list   nak_rule_disable 'stage_default'
+        list   nak_rule_enable  'tor'
+        list   nak_rule_disable 'online'
+        list   nak_rule_disable 'vpn'
+        list   nak_rule_disable 'default'
         list   nak_rule_disable 'reset'
 
 # We need to accept udp packets on port 68,
@@ -133,10 +133,10 @@ config forwarding
         option src 'wlan'
         option dest 'vpn'             
         option enabled '0'                           
-        list   nak_rule_enable  'stage_vpn'
-        list   nak_rule_disable 'stage_tor'
-        list   nak_rule_disable 'stage_online'
-        list   nak_rule_disable 'stage_default'
+        list   nak_rule_enable  'vpn'
+        list   nak_rule_disable 'tor'
+        list   nak_rule_disable 'online'
+        list   nak_rule_disable 'default'
         list   nak_rule_disable 'reset'
                                                  
 # include a file with users custom iptables rules
