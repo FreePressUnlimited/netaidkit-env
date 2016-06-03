@@ -34,7 +34,7 @@ config redirect
         list   nak_rule_disable 'online'
         list   nak_rule_disable 'vpn'
         list   nak_rule_disable 'tor'
-        list   nak_rule_disable 'default'
+        list   nak_rule_disable 'offline'
 
 # ROUTER MODE
 config forwarding
@@ -45,7 +45,7 @@ config forwarding
         list   nak_rule_enable 'online'
         list   nak_rule_disable 'vpn'
         list   nak_rule_disable 'tor'
-        list   nak_rule_disable 'default'
+        list   nak_rule_disable 'offline'
         list   nak_rule_disable 'reset'
 
 # TOR DNS
@@ -59,7 +59,7 @@ config redirect
         list   nak_rule_enable  'tor'
         list   nak_rule_disable 'online'
         list   nak_rule_disable 'vpn'
-        list   nak_rule_disable 'default'
+        list   nak_rule_disable 'offline'
         list   nak_rule_disable 'reset'
 
 # TOR PROXY
@@ -73,7 +73,7 @@ config redirect
         list   nak_rule_enable  'tor'
         list   nak_rule_disable 'online'
         list   nak_rule_disable 'vpn'
-        list   nak_rule_disable 'default'
+        list   nak_rule_disable 'offline'
         list   nak_rule_disable 'reset'
 
 # We need to accept udp packets on port 68,
@@ -136,7 +136,7 @@ config forwarding
         list   nak_rule_enable  'vpn'
         list   nak_rule_disable 'tor'
         list   nak_rule_disable 'online'
-        list   nak_rule_disable 'default'
+        list   nak_rule_disable 'offline'
         list   nak_rule_disable 'reset'
                                                  
 # include a file with users custom iptables rules
