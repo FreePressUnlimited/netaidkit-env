@@ -1,0 +1,5 @@
+-A OUTPUT -m conntrack --ctstate INVALID -j DROP
+-A OUTPUT -m state --state INVALID -j DROP
+
+-A OUTPUT ! -o lo ! -d 127.0.0.1 ! -s 127.0.0.1 -p tcp -m tcp --tcp-flags ACK,FIN ACK,FIN -j DROP
+-A OUTPUT ! -o lo ! -d 127.0.0.1 ! -s 127.0.0.1 -p tcp -m tcp --tcp-flags ACK,RST ACK,RST -j DROP

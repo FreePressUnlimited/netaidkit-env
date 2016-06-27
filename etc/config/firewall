@@ -139,6 +139,5 @@ config forwarding
         list   nak_rule_disable 'offline'
         list   nak_rule_disable 'reset'
                                                  
-# include a file with users custom iptables rules
 config include                        
-        option path /etc/firewall.user
+        option path /etc/firewall.transproxy
