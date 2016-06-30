@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Create a directory for Tor control socket
+mkdir -m 770 -p /run/tor
+chown -f tor:tor /run/tor
