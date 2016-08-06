@@ -196,3 +196,5 @@ DNSPort 9053
 DNSListenAddress 192.168.101.1            
 
 ControlSocket /run/tor/tor.sock
+
+MaxMemInQueues 4M
