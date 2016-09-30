@@ -1,0 +1,3 @@
+config php5-fastcgi
+	option enabled 0
+	option port '1026'
