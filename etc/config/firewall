@@ -51,19 +51,19 @@ config forwarding
         list   nak_rule_disable 'setup'
 
 # TOR DNS
-config redirect
-        option name             'tor_dns'
-        option src              'wlan'
-        option proto            'udp'
-        option src_dport        '53'
-        option dest_port        '9053'
-        option enabled          '0'
-        list   nak_rule_enable  'tor'
-        list   nak_rule_disable 'online'
-        list   nak_rule_disable 'vpn'
-        list   nak_rule_disable 'offline'
-        list   nak_rule_disable 'reset'
-        list   nak_rule_disable 'setup'
+#config redirect
+#        option name             'tor_dns'
+#        option src              'wlan'
+#        option proto            'udp'
+#        option src_dport        '53'
+#        option dest_port        '9053'
+#        option enabled          '0'
+#        list   nak_rule_enable  'tor'
+#        list   nak_rule_disable 'online'
+#        list   nak_rule_disable 'vpn'
+#        list   nak_rule_disable 'offline'
+#        list   nak_rule_disable 'reset'
+#        list   nak_rule_disable 'setup'
 
 # TOR PROXY
 config redirect
