@@ -3,3 +3,6 @@
 # Create a directory for Tor control socket
 mkdir -m 700 -p /run/tor
 chown tor:tor /run/tor
+
+mkdir -p /mnt/phpd_upload
+mount -o noexec,nosuid,nodev -t tmpfs tmpfs /mnt/php_upload
