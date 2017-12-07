@@ -4,5 +4,13 @@
 mkdir -m 700 -p /run/tor
 chown tor:tor /run/tor
 
+# ...a separate mountpoint for ovpn config uploads
 mkdir -p /mnt/phpd_upload
 mount -o noexec,nosuid,nodev -t tmpfs tmpfs /mnt/php_upload
+
+# disable default network rxtx LED trigger
+echo none > /sys/class/leds/gl-inet:green:lan/trigger
+echo none > /sys/class/leds/gl-inet:red:wlan/trigger
+
+# copy firmware release information to phpd-readable location
+cp nak-timestamp nak-release /tmp
