@@ -6,7 +6,7 @@ chown tor:tor /run/tor
 
 # ...a separate mountpoint for ovpn config uploads
 mkdir -p /mnt/phpd_upload
-mount -o noexec,nosuid,nodev -t tmpfs tmpfs /mnt/php_upload
+mount -o noexec,nosuid,nodev -t tmpfs tmpfs /mnt/phpd_upload
 
 # disable default network rxtx LED trigger
 echo none > /sys/class/leds/gl-inet:green:lan/trigger
