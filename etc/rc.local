@@ -9,4 +9,4 @@ mkdir -p /mnt/phpd_upload
 mount -o noexec,nosuid,nodev -t tmpfs tmpfs /mnt/phpd_upload
 
 # copy firmware release information to phpd-readable location
-cp nak-timestamp nak-release /tmp
+cp /etc/nak-timestamp /etc/nak-release /tmp
