@@ -8,9 +8,5 @@ chown tor:tor /run/tor
 mkdir -p /mnt/phpd_upload
 mount -o noexec,nosuid,nodev -t tmpfs tmpfs /mnt/phpd_upload
 
-# disable default network rxtx LED trigger
-echo none > /sys/class/leds/gl-inet:green:lan/trigger
-echo none > /sys/class/leds/gl-inet:red:wlan/trigger
-
 # copy firmware release information to phpd-readable location
 cp nak-timestamp nak-release /tmp
