@@ -1,15 +1,15 @@
 config 'ntpserver'
-        option 'hostname' '0.openwrt.pool.ntp.org'
+        option 'hostname' '0.lede.pool.ntp.org'
         option 'port'     '123'
 
 config 'ntpserver'
-        option 'hostname' '1.openwrt.pool.ntp.org'
+        option 'hostname' '1.lede.pool.ntp.org'
         option 'port'     '123'
 
 config 'ntpserver'
-        option 'hostname' '2.openwrt.pool.ntp.org'
+        option 'hostname' '2.lede.pool.ntp.org'
         option 'port'     '123'
 
 config 'ntpserver'
-        option 'hostname' '3.openwrt.pool.ntp.org'
+        option 'hostname' '3.lede.pool.ntp.org'
         option 'port'     '123'
